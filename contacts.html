@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./main.css" />
+    <title>Contacts</title>
+  </head>
+  <body>
+    <div>
+      <header
+        style="
+          background: rgb(66, 61, 61);
+          color: white;
+          text-align: center;
+          text-transform: uppercase;
+          padding: 25px;
+        "
+      >
+        <h1 id="title">Welcome to Web Development</h1>
+        <ul id="menu">
+          <li>
+            <a href="./index.html">HOME</a>
+          </li>
+          <li>
+            <a href="./about.html">About</a>
+          </li>
+          <li>
+            <a href="./contacts.html">Contacts</a>
+          </li>
+        </ul>
+      </header>
+      <main>
+        <div>
+          <h1>Contact Me</h1>
+          <form>
+            <div>
+              <label for="firstname">First Name</label>
+
+              <input type="text" id="firstname" placeholder="First Name" />
+              <label for="lastname">Last Name</label>
+              <input id="lastname" type="text" placeholder="Last Name" />
+            </div>
+            <div>
+              <label for="email">Email</label>
+              <input type="email" id="email" placeholder="Your email" />
+              <label for="company">company</label>
+              <input id="company" type="text" placeholder="Company" />
+            </div>
+            <div>
+              <label for="message">Leave your message here</label> <br />
+              <textarea
+                cols="50"
+                rows="10"
+                placeholder="Write here ..."
+              ></textarea>
+            </div>
+            <div>
+              <input type="submit" value="Submit" />
+            </div>
+          </form>
+        </div>
+      </main>
+      <footer
+        style="
+          background: rgb(66, 61, 61);
+          color: white;
+          text-align: center;
+          padding: 25px;
+        "
+      >
+        <div>
+          <p>Copyright 2021 | Asabeneh Yetayeh</p>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
