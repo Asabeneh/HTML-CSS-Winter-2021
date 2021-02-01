@@ -1,4 +1,4 @@
-BLock elements
+BLock elements => Elements that take the whole width
 h1 to h6
 p
 div
@@ -15,3 +15,7 @@ Non -block elements
  input 
  span 
  small
+ 
+ br
+ hr
+ html entities
