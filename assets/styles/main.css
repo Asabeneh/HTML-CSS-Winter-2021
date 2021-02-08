@@ -1,6 +1,30 @@
-#title {
-  color: rgb(221, 204, 204);
+/* Universal selector */
+
+* {
+  margin: 0;
 }
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+/* header css */
+header,
+footer {
+  background: rgb(118, 105, 192);
+  color: white;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 25px;
+}
+/* 
+css selectors: tagname, id, class, attribue, combinators */
+/* Specificity > inline is more specific, id, tagname and class */
+
+#title-1 {
+  color: rgb(25, 50, 78);
+}
+
 #menu {
   background: rgb(194, 199, 194);
 }
@@ -19,7 +43,7 @@ a {
 
       } */
 
-.section {
+section {
   margin: 50px;
   padding: 30px;
   border-radius: 5px;
@@ -70,8 +94,9 @@ a {
 }
 
 hr {
-  height: 3px;
-  background-color: gray;
+  /* height: 3px; */
+  padding: 5px;
+  background-color: rgb(145, 135, 190);
 }
 
 /* icons style */
@@ -80,11 +105,88 @@ i {
   margin: 30px;
 }
 .fa-github-square {
-  color:#333;
+  color: #333;
 }
-.fa-linkedin{
-  color:#0077b5;
+.fa-linkedin {
+  color: #0077b5;
 }
-.fa-twitter-square{
-  color:#1da1f2;
+.fa-twitter-square {
+  color: #1da1f2;
+}
+
+/* Table CSS */
+
+table,
+td,
+th {
+  border: 1px solid gray;
+  border-collapse: collapse;
+}
+
+table {
+  width: 60%;
+  margin: 30px auto;
+}
+
+td {
+  text-align: center;
+}
+
+/* Form CSS */
+
+.form-group {
+  /* top, right, bottom, left */
+  margin: 0 0 8px 0px;
+}
+
+input[type='text'],
+input[type='email'],
+input[type='number'],
+input[type='datetime-local'],
+textarea {
+  display: block;
+  margin-bottom: 3px;
+  width: 35%;
+  padding: 8px;
+  border: 2px solid rgb(226, 206, 238);
+  outline: none;
+  border-radius: 3px;
+}
+input[type='text']:hover,
+input[type='email']:hover,
+input[type='number']:hover,
+input[type='datetime-local']:hover,
+textarea:hover {
+  border: 2px solid rgb(193, 115, 238);
+}
+
+/* Styling the submit button */
+/* 
+input[type='submit'] {
+  background-color: rgb(50, 235, 50);
+  padding: 10px 25px;
+  border-radius: 5px;
+  border: none;
+  color: white;
+  font-size: 18px;
+} */
+
+#submit-btn {
+  background-color: rgb(50, 235, 50);
+  padding: 10px 25px;
+  border-radius: 5px;
+  border: none;
+  color: white;
+  font-size: 18px;
+}
+.category {
+  width: 75%;
+  margin: auto;
+}
+.form-section {
+  margin-bottom: 30px;
+}
+
+article {
+  margin-bottom: 25px;
 }

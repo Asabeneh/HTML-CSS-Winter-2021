@@ -3,77 +3,202 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;900&family=Montserrat:wght@200;300;400;600;900&family=Open+Sans:wght@300;400;600;800&family=Oswald:wght@300;400;500;600&family=Poppins:wght@200;300;400;600;900&family=Raleway:wght@300;400;600;900&family=Roboto:ital,wght@0,300;0,400;0,500;0,900;1,500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+      integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="./assets/styles/main.css" />
     <title>Contacts</title>
   </head>
   <body>
-    <div>
-      <header
-        style="
-          background: rgb(66, 61, 61);
-          color: white;
-          text-align: center;
-          text-transform: uppercase;
-          padding: 25px;
-        "
-      >
-        <h1 id="title">Welcome to Web Development</h1>
-        <ul id="menu">
-          <li>
-            <a href="./index.html">HOME</a>
-          </li>
-          <li>
-            <a href="./about.html">About</a>
-          </li>
-          <li>
-            <a href="./contacts.html">Contacts</a>
-          </li>
+    <div id="root">
+      <header>
+        <div class="header-wrapper">
+          <h1 id="title">Web Development</h1>
+          <ul id="menu">
             <li>
-            <a href="./projects.html">Projects</a>
-          </li>
-        </ul>
+              <a href="./index.html">HOME</a>
+            </li>
+            <li>
+              <a href="./about.html">About</a>
+            </li>
+            <li>
+              <a href="./contacts.html">Contacts</a>
+            </li>
+            <li>
+              <a href="./projects.html">Projects</a>
+            </li>
+          </ul>
+        </div>
       </header>
       <main>
-        <div>
-          <h1>Contact Me</h1>
-          <form>
-            <div>
-              <label for="firstname">First Name</label>
+        <div class="main-wrapper">
+          <section class="category form-section">
+            <h1>Application Form</h1>
+            <form>
+              <div class="form-group">
+                <label for="firstname">First Name</label>
 
-              <input type="text" id="firstname" placeholder="First Name" />
-              <label for="lastname">Last Name</label>
-              <input id="lastname" type="text" placeholder="Last Name" />
-            </div>
-            <div>
-              <label for="email">Email</label>
-              <input type="email" id="email" placeholder="Your email" />
-              <label for="company">company</label>
-              <input id="company" type="text" placeholder="Company" />
-            </div>
-            <div>
-              <label for="message">Leave your message here</label> <br />
-              <textarea
-                cols="50"
-                rows="10"
-                placeholder="Write here ..."
-              ></textarea>
-            </div>
-            <div>
-              <input type="submit" value="Submit" />
-            </div>
-          </form>
+                <input type="text" id="firstname" placeholder="First Name" />
+              </div>
+
+              <div class="form-group">
+                <label for="lastname">Last Name</label>
+                <input id="lastname" type="text" placeholder="Last Name" />
+              </div>
+
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="Your email" />
+              </div>
+
+              <div class="form-group">
+                <label for="company">company</label>
+                <input id="company" type="text" placeholder="Company" />
+              </div>
+              <div class="form-group">
+                <label for="age">You age: </label>
+                <input type = "number" id="age" name="age' placeholder="Age" />
+              </div>
+              <div class="form-group">
+                <label for="date">Date of Birth</label>
+                <input id="date" type="datetime-local" />
+              </div>
+              <div class="form-group">
+                <p>What are your skills</p>
+                <input type="checkbox" id="html" />
+                <label for="html">HTML</label>
+                <br />
+                <input type="checkbox" id="css" />
+                <label for="css">CSS</label>
+                <br />
+                <input type="checkbox" id="js" />
+                <label for="js">JavaScript</label>
+                <br />
+                <input type="checkbox" id="react" />
+                <label for="js">React</label>
+                <br />
+                <input type="checkbox" id="redux" />
+                <label for="redux">Redux</label>
+              </div>
+              <div class="form-group">
+                <label for="color">Your favorite</label>
+                <input id="color" type="color" />
+              </div>
+
+              <div class="form-group">
+                <p>Gender</p>
+                <input type="radio" id="female" name="gender" />
+                <label for="female">Female</label>
+                <br />
+                <input type="radio" id="male" name="gender" />
+                <label for="male">Male</label>
+              </div>
+
+              <div class="form-group">
+                <input type="radio" id="other" name="gender" />
+                <label for="other">Other</label>
+              </div>
+
+              <div class="form-group">
+                <p>Select your country</p>
+                <select name="country" id="country">
+                  <option value="Finland">Finland</option>
+                  <option value="Estonia">Estonia</option>
+                  <option value="Sweden">Sweden</option>
+                  <option value="Norway">Norway</option>
+                  <option value="Denmark">Denmark</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="message">Leave your message here</label> <br />
+                <textarea
+                  id="message"
+                  cols="50"
+                  rows="10"
+                  placeholder="Write here ..."
+                ></textarea>
+              </div>
+              <div class="form-group">
+                <input type="file" />
+              </div>
+              <div>
+                <input type="checkbox" id="agree" />
+                <label for="agree"
+                  >Be sure that all the information is yours and true.</label
+                >
+              </div>
+
+              <div>
+                <input type="submit" id="submit-btn" value="Submit" />
+              </div>
+            </form>
+          </section>
+          <section class="category table-section">
+            <h1>HTML Table</h1>
+            <table>
+              <thead>
+                <tr>
+                  <th>Name</th>
+                  <th>Age</th>
+                  <th>Gender</th>
+                  <th>Country</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Asab</td>
+                  <td>250</td>
+                  <td>Male</td>
+                  <td>Finland</td>
+                </tr>
+                <tr>
+                  <td>Kirsi</td>
+                  <td>25</td>
+                  <td>Fale</td>
+                  <td>Finland</td>
+                </tr>
+                <tr>
+                  <td>Baptiste</td>
+                  <td>20</td>
+                  <td>Male</td>
+                  <td>France</td>
+                </tr>
+              </tbody>
+            </table>
+          </section>
         </div>
       </main>
-      <footer
-        style="
-          background: rgb(66, 61, 61);
-          color: white;
-          text-align: center;
-          padding: 25px;
-        "
-      >
-        <div>
-             <small>Copyright 2021 | Asabeneh Yetayeh</small>
+
+      <footer>
+        <div class="footer-wrapper">
+          <div>
+            <small>Copyright &copy; 2021 | Asabeneh Yetayeh</small>
+          </div>
+
+          <div>
+            <a href="https://github.com/Asabeneh" target="_blank"
+              ><i class="fab fa-github-square"></i
+            ></a>
+            <a href="https://www.linkedin.com/in/asabeneh/" target="_blank"
+              ><i class="fab fa-linkedin"></i
+            ></a>
+            <a href="https://twitter.com/Asabeneh" target="_blank"
+              ><i class="fab fa-twitter-square"></i
+            ></a>
+          </div>
+          <div>
+            <a href="#root" style="color: red">
+              <i class="fas fa-arrow-alt-circle-up"></i>
+            </a>
+          </div>
         </div>
       </footer>
     </div>
