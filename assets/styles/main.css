@@ -2,6 +2,7 @@
 
 * {
   margin: 0;
+  box-sizing: border-box;
 }
 
 body {
@@ -9,20 +10,31 @@ body {
 }
 
 /* header css */
+header {
+  top: 0;
+  position: fixed;
+  width: 100%;
+  z-index: 10;
+  padding: 50px;
+}
 header,
 footer {
   background: rgb(118, 105, 192);
   color: white;
   text-align: center;
   text-transform: uppercase;
-  padding: 25px;
+  /* padding: 25px; */
 }
 /* 
 css selectors: tagname, id, class, attribue, combinators */
 /* Specificity > inline is more specific, id, tagname and class */
+main {
+  margin-top: 250px;
+}
 
-#title-1 {
+#header-title {
   color: rgb(25, 50, 78);
+  margin: 20px;
 }
 
 #menu {
@@ -189,3 +201,31 @@ input[type='submit'] {
 article {
   margin-bottom: 25px;
 }
+
+/* Icons css */
+/* .footer-wrapper {
+  display: relative;
+} */
+#arrow-wrapper {
+  display: flex;
+  justify-content: flex-end;
+}
+
+/* Images */
+#front-end img,
+#backend img {
+  max-width: 20%;
+  min-width: 20%;
+}
+
+@media (max-width: 768px) {
+  /* Images */
+  #front-end img,
+  #backend img {
+    /* max-width: 20%;
+  min-width: 20%; */
+    display: block;
+    max-width: 100%;
+  }
+}
+

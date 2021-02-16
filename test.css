@@ -1,0 +1,112 @@
+/* Universal Selector */
+* {
+  box-sizing: border-box;
+}
+
+/* Body css */
+body {
+  background-color: #744285;
+}
+
+/* Header */
+
+header {
+  top: 0;
+  position: fixed;
+  left: 250px;
+  z-index: 10;
+}
+
+main {
+  margin-top: 150px;
+}
+
+#header-title {
+  font-size: 42px;
+  text-transform: uppercase;
+  text-align: center;
+  color: green;
+}
+
+#section-id {
+  color: purple;
+  font-size: 12;
+  text-align: center;
+}
+#boxes {
+  position: relative;
+  border: 2px solid blue;
+  height: 600px;
+}
+.box {
+  width: 250px;
+  height: 250px;
+  text-align: center;
+  line-height: 250px;
+  display: inline-block;
+  position: absolute;
+}
+/* If you are using postion: absolute, you can use left, right, top, bottom */
+/* 
+position: static -> it does not change anything
+position: relative -> it is almost the same as static but it allows children to be absolute
+position:fixed
+position:sticky
+*/
+#box1 {
+  background-color: rgb(231, 102, 15);
+}
+#box2 {
+  left: 200px;
+  top: 25px;
+  background-color: rgb(53, 53, 219);
+  z-index: 1;
+}
+#box3 {
+  left: 400px;
+  top: 50px;
+  background-color: rgb(241, 213, 86);
+  z-index: 2;
+}
+span {
+  border: 2px solid orange;
+  height: 50px;
+  width: 150px;
+  text-align: center;
+  line-height: 50px;
+  display: inline-block;
+}
+/* newsletter css */
+input[type='email'] {
+  padding: 8px;
+}
+
+button[type='submit'] {
+  background-color: green;
+  padding: 10px;
+  border: none;
+  border-radius: 3px;
+  color: white;
+}
+.css-box-model {
+  border-top: 20px solid red;
+  border-right: 20px solid green;
+  border-bottom: 20px solid yellow;
+  border-left: 20px solid lightblue;
+  width: 500px;
+  height: 300px;
+  margin-left: 100px;
+  margin-top: 50px;
+  padding: 100px;
+}
+
+#div-sticky,
+#sticky-text {
+  top: 0;
+  position: sticky;
+  z-index: 8;
+}
+#sticky-text {
+  top: 150px;
+}
+/* Footer */
