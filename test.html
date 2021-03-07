@@ -5,92 +5,163 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Test</title>
-    <link rel="stylesheet" href="./test.css" />
+    <style>
+    
+    * {
+        box-sizing: border-box;
+        margin:0;
+        padding:0;
+      }
+
+      html {
+        font-size:10px;
+      }
+      body {
+        /* display: flex;
+        justify-content: center;
+        align-items: center;;
+        background-image: url('./assets/images/laptop.jfif');
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 100vh; */
+      }
+      /* .container {
+        width:100%;
+        height:400px;
+        border:2px solid red;
+        padding:0;
+        font-size: 0
+      }
+      .box{
+    font-size: 2.5rem;
+      display: inline-block;
+        width:50%;
+        height:100%;
+        border: 2px solid;
+        
+      } */
+      h1 {
+        font-size: 2.5rem;
+      }
+      h2 {
+        font-size:2rem;
+      }
+      .test{
+        width:300px;
+        height:300px;
+        border:2px solid orange;
+      }
+      p {
+        font-size:2rem;
+        padding:1.5em;
+        position:relative;
+      }
+      /* 
+      justify-content
+      align-items
+       */
+      .flex-container {
+        display: flex;
+        /* justify-content: space-between; */
+        justify-content: center;;
+        flex-wrap: wrap;
+        width: 800px;
+        height: 500px;
+
+      }
+      .item {
+        box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+        border-radius: 5px;
+        width:150px;
+        height:100px;
+        margin:10px; 
+        font-size:28px;
+        text-align: center;
+        line-height: 100px;;
+      }
+      .item:hover {
+        box-shadow: rgba(60, 64, 67, 0.5) 0px 1px 2px 0px, rgba(60, 64, 67, 0.25) 0px 1px 3px 1px;
+        cursor: pointer;
+      }
+      .banner {
+        color:purple;
+        height: 150px;
+      }
+      .boxes {
+        display: flex;
+        justify-content: space-between;
+        height:500px;
+        width:100%;
+        background:lightblue;;
+      }
+      .box {
+        display: flex;;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;;
+        font-size:2.5rem;
+        width:33.333%;
+        height:100px;
+        border:2px solid green;
+      }
+      p::after {
+        content:'New Product';
+        color:red;
+        font-size:1.5rem;
+        position:absolute;
+        top:10px;
+      }
+      @media(max-width:768px){
+        .boxes{
+          flex-direction: column;;
+        }
+        .box{
+width:100%;
+font-size:1.5rem;
+
+        }
+      }
+    </style>
   </head>
   <body>
-    <header>
-      <h1 id="header-title">Welcome to Web Development</h1>
-    </header>
 
-    <main>
-      <div>
-        <h1 id="section-id">Introduction</h1>
-        <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem vero
-          dolorem itaque assumenda accusamus ipsam eos, aliquid libero dolore
-          quae quo ipsa dolorum enim minus distinctio consectetur asperiores,
-          repellendus illo! Consectetur, quos laborum soluta harum laudantium
-          consequuntur tempore minus animi maiores, dignissimos itaque alias
-          ducimus quasi a quas recusandae praesentium voluptates laboriosam,
-          sequi ratione. Dolorum porro itaque repudiandae optio laboriosam.
-          Impedit corporis voluptates tempore? Magni, dolore inventore quia
-          possimus voluptate suscipit earum aut mollitia quisquam qui pariatur
-          debitis aperiam distinctio vitae dolorem! Corrupti porro alias maxime
-          doloribus at aspernatur id!
-        </p>
-      </div>
-      <div id="boxes">
-        <div class="box" id="box1">HTML</div>
-        <div class="box" id="box2">CSS</div>
-        <div class="box" id="box3">JavaScript</div>
-      </div>
-      <p id="sticky-text">I would to be stuck in here</p>
-      <div id="div-sticky">lET SEE SEE</div>
-      <br />
-      <span>span 1</span>
-      <span>span 2</span>
-      <span>span 3</span>
-      <div>
-        <h3>Subscribe for our news letter</h3>
-        <input type="email" name="newsletter" />
-        <button type="submit">Subscribe</button>
-      </div>
-      <h1 class="css-box-model">CSS BOX MODEL</h1>
-      <p>
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro
-        quibusdam labore voluptate asperiores molestias? Quisquam iure nobis
-        ullam illum fugit odio. Vitae ex magni doloremque laboriosam iusto nemo
-        dolores eius? Blanditiis at in quis maiores facere quo. Quam eveniet
-        sunt dolorem possimus, obcaecati doloribus veritatis molestiae
-        excepturi! Praesentium, officia! Ad sed labore fugiat recusandae, minima
-        tempore iure soluta numquam repudiandae! Optio ipsum sunt magnam modi
-        adipisci voluptatum soluta? Reprehenderit numquam soluta deserunt
-        officia, delectus quasi fugit ipsum, est consequuntur a reiciendis
-        vitae! Quibusdam expedita vitae, in cupiditate accusamus dolore nemo?
-        Quam consequatur quas delectus atque sapiente placeat facere architecto
-        temporibus rerum vero qui recusandae iure, sequi quibusdam iusto ut
-        provident aliquid! In nam expedita tenetur magni totam? Laborum, odit
-        atque. Itaque soluta sunt rerum rem nobis eveniet harum blanditiis
-        corporis beatae sed ad consequatur aspernatur tempore quia eius, quos
-        consectetur provident veritatis architecto et, animi iste minus iusto
-        maxime! Maxime. Repellendus ex quasi sunt deleniti consequatur.
-        Accusantium magnam animi sit aliquid inventore. Neque ut illo quasi iure
-        esse? Porro soluta rem tempore dicta unde? Laboriosam cupiditate odio
-        provident facere ea! Possimus, deleniti deserunt vero atque, sequi unde
-        nemo illum culpa magni corrupti laboriosam. Natus esse unde officia
-        deleniti quod repellendus consequuntur nulla, id, dolor, veritatis ipsum
-        animi. Nostrum, hic quisquam? Recusandae sint nesciunt repellat iste
-        quae est consectetur iusto tempora, dicta ex nihil impedit quam autem et
-        quia quod voluptatibus quasi itaque nulla, dolores, voluptas suscipit
-        nam sit perferendis. Ad. Veniam culpa quasi obcaecati corporis officia
-        dolorem, minima tenetur maiores ducimus reiciendis molestiae in animi
-        praesentium placeat consequuntur voluptate facere dicta excepturi
-        perspiciatis temporibus voluptas ut cum quidem fuga. Hic? Aut qui eius
-        nostrum. Architecto sapiente, officiis perspiciatis voluptatem iusto
-        accusamus similique, doloremque, autem in vel mollitia voluptatum. Nulla
-        numquam cumque ullam sit distinctio quis odit perspiciatis fugiat soluta
-        aspernatur?
-      </p>
-      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur nihil
-      sunt, dignissimos quod veniam nemo blanditiis illum in adipisci minus
-      voluptatum officiis eaque ipsam assumenda! Aspernatur nihil animi impedit
-      nulla. Odit deleniti esse necessitatibus quis soluta, iste dolores
-      praesentium beatae ad, eius, voluptas eum unde quibusdam et reprehenderit
-      pariatur ea? Sint quia obcaecati enim asperiores odio, hic nam quas
-      eveniet? Asperiores, dolores vitae. Ratione repellat odit eaque accusamus,
-      perferendis velit explicabo, nisi nihil fugiat cupiditate reprehenderit,
-      illum sapiente dolore possimus officiis totam. Nesciunt, quibusdam placeat
-      quas perspiciatis facilis saepe neque.
-    </main>
+    <!-- <div class="banner">
+      <h1>I am Asabeneh Yetayeh, a fullstack developer based in Helsinki, Finland</h1>
+      <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JS</li>
+        <li>React</li>
+       
+      </ul>
+    </div> -->
+
+    
+
+
+     <!-- <div class="flex-container">
+      <div class="item">1</div>
+      <div class="item">2</div>
+      <div class="item">3</div>
+      <div class="item">4</div>
+      <div class="item">5</div>
+      <div class="item">6</div>
+      <div class="item">7</div>
+      <div class="item">8</div>
+      <div class="item">9</div>
+      <div class="item">10</div>
+      <div class="item">11</div>
+      <div class="item">12</div>
+    </div> 
+    -->
+
+    <div class="boxes">
+      <div class="box">Column 1</div>
+      <div class="box">Column 2</div>
+      <div class="box">Column 3</div>
+    </div>
+
+    <p>ANY TEXT HERE</p>
+    
   </body>
 </html>
